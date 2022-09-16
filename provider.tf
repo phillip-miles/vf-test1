@@ -1,12 +1,8 @@
-terraform {
-  required_providers {
-    alicloud = {
-      source  = "aliyun/alicloud"
-      version = "1.162.0"
-    }
-  }
-}
-
-provider "alicloud" {
-  region = "cn-hangzhou"
+provider "oci" {
+  #these to be provided by env vars
+  # private_key_path
+  # fingerprint
+  # tenancy_ocid 
+  # user_ocid   
+  region = "uk-london-1"
 }

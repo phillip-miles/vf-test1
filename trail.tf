@@ -5,7 +5,7 @@ resource "alicloud_actiontrail_trail" "fail" {
   oss_write_role_arn = alicloud_ram_role.trail.arn
   oss_bucket_name    = alicloud_oss_bucket.trail.bucket
   event_rw           = "Read"
-  trail_region       = "cn-hangzhou"
+  trail_region       = "All"
 }
 
 resource "alicloud_oss_bucket" "trail" {
